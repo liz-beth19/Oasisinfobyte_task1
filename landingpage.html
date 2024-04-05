@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechGenius Landing Page</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    /* Header Styles */
+    header {
+      background-color: teal;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    /* Navigation Styles */
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    /* Main Content Styles */
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 50px;
+    }
+    .service {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f4f4f4;
+      transition: all 0.3s ease;
+    }
+    .service:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    /* Programming Languages Section */
+    .languages {
+      margin-top: 50px;
+      text-align: center;
+    }
+    .languages h2 {
+      color: teal;
+    }
+    .container h2 {
+      color: teal;
+      text-align: center;
+    }
+    .language-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .language-item {
+      flex: 0 0 calc(33.33% - 20px);
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f4f4f4;
+    }
+    footer{
+      background-color: gray;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    .container2 {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .consultation-image {
+      flex: 1;
+    }
+
+    .consultation-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .consultation-text {
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    .consultation-text p {
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .container2 {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .consultation-text {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to TechGenius</h1>
+    <p>Elevate Your Digital Presence</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Services</h2>
+    <div class="main-content">
+      <div class="service">
+        <img src="web development.jpg" width=50% height=50%>
+        <h2>Web Development</h2>
+        <p>Web development involves the creation and maintenance of websites and web applications accessible over the internet, encompassing design, client-side scripting, server-side scripting, database management, and security. Exciting advancements in the field include technologies like progressive web apps (PWAs) offering app-like experiences and serverless architecture enhancing scalability and flexibility. At our company, we specialize in delivering tailored web solutions using languages like HTML, CSS, and JavaScript, along with frameworks like React.js and Vue.js. From website design and e-commerce solutions to custom web applications and security audits, we provide comprehensive services to meet diverse client needs and drive business growth in the digital era.</p>
+      </div>
+      <div class="service">
+        <img src="representations-user-experience-interface-design.jpg" width=50% height=50%>
+                <h2>Mobile App Development</h2>
+        <p>Mobile app development refers to the process of creating software applications specifically designed to run on mobile devices such as smartphones and tablets. It involves a combination of programming languages, frameworks, and tools to build apps for various platforms like iOS and Android. Mobile apps offer a wide range of functionalities, including but not limited to communication, entertainment, productivity, social networking, and e-commerce. The development process typically involves several stages, including conceptualization, design, development, testing, deployment, and maintenance. Developers may choose to build native apps using platform-specific languages like Swift for iOS or Java/Kotlin for Android, or opt for cross-platform development frameworks like React Native or Flutter to create apps that can run on multiple platforms with a single codebase. Mobile app development plays a crucial role in shaping the digital landscape, enabling businesses and individuals to access information and services on the go, revolutionizing industries, and driving innovation in the mobile technology space.</p>
+      </div>
+      <div class="service">
+        <img src="software development.jpg" width=50% height=50%>
+        <h2>Software Development</h2>
+        <p>Software development is the iterative process of designing, building, testing, and maintaining software applications or systems. It involves translating user needs and requirements into functional, scalable solutions using programming languages, frameworks, and tools. Exciting advancements in the field include the proliferation of low-code and no-code platforms, the integration of artificial intelligence and machine learning, the adoption of DevOps and CI/CD practices, and the emergence of serverless computing. At our company, we specialize in delivering custom software solutions tailored to our clients' specific requirements. From web and mobile applications to enterprise software and integrations, our experienced team leverages cutting-edge technologies and agile methodologies to deliver innovative, high-quality software products that drive business success and foster digital transformation.
+        </p>
+      </div>
+    </div>
+
+    <div class="languages">
+      <h2>Programming Languages We Use</h2>
+      <div class="language-list">
+        <div class="language-item">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Vue.js</li>
+          </ul>
+        </div>
+        <div class="language-item">
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>Ruby on Rails</li>
+            <li>ASP.NET</li>
+          </ul>
+        </div>
+        <div class="language-item">
+          <h3>Mobile</h3>
+          <ul>
+            <li>Swift</li>
+            <li>Kotlin</li>
+            <li>React Native</li>
+            <li>Flutter</li>
+          </ul>
+        </div>
+        <div class="language-item">
+          <h3>Databases</h3>
+          <ul>
+            <li>SQL</li>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>Firebase</li>
+          </ul>
+        </div>
+        <div class="language-item">
+          <h3>Cloud</h3>
+          <ul>
+            <li>AWS</li>
+            <li>Azure</li>
+            <li>Google Cloud Platform</li>
+          </ul>
+        </div>
+        <div class="language-item">
+          <h3>Big Data</h3>
+          <ul>
+            <li>Hadoop</li>
+            <li>Spark</li>
+            <li>Apache Kafka</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container2">
+  <div class="consultation-image">
+    <img src="consultation.jpeg" alt="Consultation Image">
+  </div>
+  <div class="consultation-text">
+    <p>We also offer consultation services. Feel free to call us for expert advice and guidance on your web development,Software Development and Mobile App Development projects.</p>
+    <p>Phone: +27 12-456-7890</p>
+  </div>
+</div>
+
+
+  <footer>
+    <p>&copy; 2024 TechGenius. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
